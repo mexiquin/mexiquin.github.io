@@ -37,7 +37,7 @@ header:
     spaceBetweenTitleSubtitle: 16
   
   - type: img
-    imageSrc: images/header/background.jpg
+    imageSrc: images/header/background2.jpg
     imageSize: cover
     imageRepeat: no-repeat
     imagePosition: center
