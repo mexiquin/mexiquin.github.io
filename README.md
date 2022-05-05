@@ -1,2 +1,2 @@
-# mexiquin.github.io
-The GitHub repository for my personal website
+# QJasper.com
+Come on down to [qjasper.com](qjasper.com)
