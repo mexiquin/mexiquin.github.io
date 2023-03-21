@@ -1,9 +1,8 @@
-logoText: QJasper.com
+logoText: QJJ Productions
 logoType: short
 description: Mi casa
 custom_css: 
   - sass/custom.scss
-
 custom_js: []
 useFaviconGenerator: true
 meta_image: ''
@@ -46,8 +45,8 @@ notAllowedTypesInHomeFeed:
   - presentation
   - resume
   - gallery
-viewportSize: normal
-enableUiAnimation: true
+viewportSize: wide
+enableUiAnimation: false
 hideSingleContentsWhenJSDisabled: false
 enablePinnedPosts: true
 minItemsToShowInTagCloud: 1
@@ -87,7 +86,7 @@ whoami: Software Engineer & Aspiring Data Scientist
 bioImageUrl: ''
 useGravatar: false
 organization: Northern Arizona University
-enableBio: true
+enableBio: false
 enableBioImage: true
 enableSidebar: true
 enableSidebarTags: true
@@ -97,7 +96,7 @@ enableHomeSidebarTitles: true
 enableListSidebarTitles: true
 enableToc: true
 hideToc: false
-tocFolding: false
+tocFolding: true
 tocPosition: inner
 enableTocSwitch: true
 itemsPerCategory: 5
