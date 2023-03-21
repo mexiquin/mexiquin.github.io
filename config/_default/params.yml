@@ -1,7 +1,9 @@
 logoText: QJasper.com
 logoType: short
 description: Mi casa
-custom_css: []
+custom_css: 
+  - sass/custom.scss
+
 custom_js: []
 useFaviconGenerator: true
 meta_image: ''
