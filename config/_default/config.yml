@@ -1,6 +1,5 @@
 baseURL: 'https://mexiquin.github.io/'
 title: Quinton's Repository
-theme: zzo
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
 hasCJKLanguage: false
