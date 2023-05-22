@@ -1,9 +1,11 @@
+$yellow-highlight: #FFD866;
+
 $dark: (
     footer-background-color: #403E41,
     footer-color: #bdbdbd, 
-    link: #FFD866,
+    link: $yellow-highlight,
     link-hover: #508dffec,
-    title-color: #ffd866,
+    title-color: $yellow-highlight,
     meta-color: #FCFCFA,
     body-color: #FCFCFA,
     hr-color: #595B5C,
@@ -19,11 +21,11 @@ $dark: (
     navbar-background-color: #403E41,
     navbar-mobile-background-color: #3a3a3a,
     navbar-title-color: #FCFCFA,
-    navbar-title-hover-color: #FFD866,
+    navbar-title-hover-color: $yellow-highlight,
     navbar-title-active-color: #508dffec,
     navbar-menu-hover-background-color: lighten(#403E41, 5%),
-    navbar-dropdown-item-hover-color: #FFD866,
-    sidebar-title-color: #aed581,
+    navbar-dropdown-item-hover-color: $yellow-highlight,
+    sidebar-title-color: darken($yellow-highlight, 20%),
     sidebar-li-color: #FCFCFA,
     taxo-title-color: #bdbdbd,
     taxo-num-color: #FCFCFA,

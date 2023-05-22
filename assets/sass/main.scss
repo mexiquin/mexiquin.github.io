@@ -33,6 +33,9 @@ $cursive-font: {{ .Site.Data.font.cursive_font }};
 
 $viewport_size: {{ .Site.Params.viewportSize | default "normal" }};
 
+$background-img-url: "{{ .Site.Params.backgroundImageURL | default "none" }}";
+$background-img-local: "{{ .Site.Params.backgroundImageLocal | default "false" }}";
+
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/functions';

@@ -4,6 +4,18 @@
   @include flexbox();
   
   @include themify($themes) {
+    @if $background-img-url != "none" {
+      background-image: url($background-img-url);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    @if $background-img-local != "false" {
+      background-image: url($background-img-local);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
       color: themed('body-color');
       background-color: themed('backdrop-background-color');
       hr {

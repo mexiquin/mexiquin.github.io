@@ -1,18 +1,15 @@
 logoText: QJasper
 logoType: short
 description: Mi casa
-custom_css: 
-  - sass/custom.scss
+
+backgroundImageLocal: "/images/background/winter-museum.jpg"
+
 custom_js: []
 useFaviconGenerator: true
 meta_image: ''
 themecolor: ''
 themeOptions:
   - dark
-  - light
-  - hacker
-  - solarized
-  - kimbie
 notAllowedTypesInHome:
   - contact
   - talks
@@ -45,7 +42,7 @@ notAllowedTypesInHomeFeed:
   - presentation
   - resume
   - gallery
-viewportSize: wide
+viewportSize: narrow
 enableUiAnimation: false
 hideSingleContentsWhenJSDisabled: false
 enablePinnedPosts: true
