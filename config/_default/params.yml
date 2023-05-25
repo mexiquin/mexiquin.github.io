@@ -42,7 +42,7 @@ notAllowedTypesInHomeFeed:
   - presentation
   - resume
   - gallery
-viewportSize: narrow
+viewportSize: normal
 enableUiAnimation: false
 hideSingleContentsWhenJSDisabled: false
 enablePinnedPosts: true
@@ -68,15 +68,6 @@ paginateWindow: 1
 talksPaginate: 5
 talksGroupByDate: '2006'
 pubPaginate: 20
-writtenTimeIcon: "\U0001F4C5"
-modifiedTimeIcon: "\U0001F4DD"
-readingTimeIcon: ☕
-authorIcon: ✍️
-pagePvIcon: "\U0001F440"
-pinIcon: "\U0001F4CC"
-tagIcon: "\U0001F3F7️"
-publicationIcon: "\U0001F4DA"
-typeIcon: "\U0001F3AF"
 myname: Quinton Jasper
 email: 'qjasper [at] proton [dot] me'
 whoami: Software Engineer & Aspiring Data Scientist

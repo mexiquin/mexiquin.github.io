@@ -2,7 +2,7 @@
 <ul id="{{ $taxo }}" class="pub__tags caption">
   {{ range $index, $value := .Param $taxo }}
     {{ if and (eq $index 0) (ne (len $value) 0) }}
-    &nbsp;🏷️
+    &nbsp;
     {{ end }}
 
     {{ $name := . }}
