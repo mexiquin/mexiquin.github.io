@@ -1,12 +1,15 @@
 +++
-title = "My name is Quinton Jasper"
+title = "About Me"
 description = "About me"
 type = "about"
-date = "2022-07-27"
+date = "2023-05-24"
 +++
 
-I’m a professional software developer and incoming graduate student of Informatics at Northern Arizona University. What once started as an interest in programming and computing machinery has now become a desire to apply computing and statistical methods in order to identify real-world patterns and invoke real-world change. 
+Hi there! I'm Quinton, and I’m a professional software developer at Northern Arizona University. 
 
-What do I specialize in? I'm not really sure just yet, as the applications are too numerous. However, I currently conduct research under Dr. Morgan Vigil-Hayes at the CANIS Lab here at NAU. Here, I utilize qualitative and quantitative statistical methods to better understand the effects of network and connectivity disparities among different socio-economic classes, as well as helping develop both software and community-engagement programs that both encourage and educate disadvantaged communities, allowing individuals to make full use of today's available technology.
+I currently specialize in Web and WordPress development, but I like to dip my toes into other fields as well!
+If I happen to make any major discoveries or developments, I'll be sure to post them here so others can come and
+tinker with me. :) 
+
 
 
