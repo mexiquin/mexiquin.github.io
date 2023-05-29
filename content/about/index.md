@@ -1,14 +1,17 @@
-+++
-title = "About Me"
-description = "About me"
-type = "about"
-date = "2023-05-24"
-+++
+---
+title: "About Me"
+description: "About me"
+type: "about"
+date: "2023-05-24"
+---
 
-Hi there! I'm Quinton, and I’m a professional software developer at Northern Arizona University. 
+![Picture of Me!](/images/whoami/avatar.jpg)
 
-I currently specialize in Web and WordPress development, but I like to dip my toes into other fields as well!
-If I happen to make any major discoveries or developments, I'll be sure to post them here so others can come and tinker with me. :) 
+Hi there, I'm Quinton! I’m{{< jobtitle >}} 
+
+My experiences range from computer repair and resale, to academic research. I currently specialize in WordPress development, but I like to dip my toes into other fields as well!
+
+My goal is to make this website my central hub for publishing any articles/documentation/blog posts for personal projects, or just straight-up personal blog posts.   
 
 
 

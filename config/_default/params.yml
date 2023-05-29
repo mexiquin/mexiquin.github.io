@@ -2,6 +2,11 @@ logoText: QJasper
 logoType: short
 description: Mi casa
 
+myname: Quinton Jasper
+email: 'qjasper [at] proton [dot] me'
+jobtitle: Applications Developer
+organization: Northern Arizona University
+
 backgroundImageLocal: "/images/background/winter-museum.jpg"
 
 custom_js: []
@@ -68,12 +73,8 @@ paginateWindow: 1
 talksPaginate: 5
 talksGroupByDate: '2006'
 pubPaginate: 20
-myname: Quinton Jasper
-email: 'qjasper [at] proton [dot] me'
-whoami: Software Engineer & Aspiring Data Scientist
 bioImageUrl: ''
 useGravatar: false
-organization: Northern Arizona University
 enableBio: false
 enableBioImage: true
 enableSidebar: true
@@ -100,53 +101,11 @@ showFeedLinks: true
 showSocialLinks: true
 enableLangChange: false
 enableThemeChange: false
-googleTagManager: ''
-baiduAnalytics: ''
-enableBusuanzi: false
-busuanziSiteUV: false
-busuanziSitePV: false
-busuanziPagePV: false
 updatePeriod: weekly
 updateFrequency: ''
 fullContents: false
 enableComment: false
-disqus_shortname: ''
-commento: false
-telegram:
-  enable: false
-  siteId: ''
-  dataLimit: 5
-gitment:
-  owner: ''
-  repo: ''
-  clientId: ''
-  clientSecret: ''
-utterances:
-  owner: ''
-  repo: ''
-gitalk:
-  owner: ''
-  repo: ''
-  clientId: ''
-  clientSecret: ''
-valine:
-  enable: false
-  appId: 你的appId
-  appKey: 你的appKey
-  notify: false
-  verify: false
-  avatar: mm
-  placeholder: 说点什么吧...
-  visitor: false
-changyan:
-  changyanAppid: ''
-  changyanAppkey: ''
-livere:
-  livereUID: ''
-isso:
-  enable: false
-  scriptSrc: ''
-  dataAttrs: ''
+
 socialOptions:
   email: ''
   phone: ''
@@ -178,12 +137,14 @@ socialOptions:
   dev-to: ''
   gitea: ''
   google-scholar: ''
+
 donationOptions:
   enable: false
   alipay: ''
   wechat: ''
   paypal: ''
   patreon: ''
+
 footerLinks:
   - name: 
     link: 

@@ -12,8 +12,7 @@ tags:
   - life
 ---
 
-It's been a while since I last posted on this little blog. Unfortunately, logging down the important 
-events in my life often takes a backseat when I'm out there living it. However, here is a brief recap:
+It's been quite a while since I last posted on this little blog. I always forget to pop in every now and then to post little updates. However, here is a brief recap:
 
 Since my last post over summer 2022, I had a fantastic experience working under Dr. Morgan Vigil-Hayes, where
 I was exposed to a, for me, overwhelming number of new topics and potential career paths. It was at this point

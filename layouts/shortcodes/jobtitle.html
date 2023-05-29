@@ -1,0 +1,14 @@
+{{ $input :=  .Site.Params.jobtitle }}
+{{ $first_char := substr $input 0 1 }}
+{{ $vowels := "aeiouAEIOU" }}
+{{ $result := "" }}
+
+{{ if $first_char | in $vowels}}
+    {{ $result = print "an " $input }}
+{{ else }}
+    {{ $result = print "a " $input }}
+{{ end }}
+
+{{ $result = print $result  " at " .Site.Params.organization "."}}
+
+{{ $result }}
