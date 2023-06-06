@@ -1,5 +1,5 @@
 ---
-title: "Vos Reinstall Nix"
+title: "Reinstalling Nix in VanillaOS"
 date: 2023-06-05T22:44:43-07:00
 author: Quinton Jasper
 draft: false
