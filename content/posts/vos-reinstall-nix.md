@@ -2,7 +2,7 @@
 title: "Vos Reinstall Nix"
 date: 2023-06-05T22:44:43-07:00
 author: Quinton Jasper
-draft: true
+draft: false
 categories:
   - guide
   - linux
