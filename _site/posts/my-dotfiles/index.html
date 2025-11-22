@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+  <head>
+  </head>
+  <body>
+    <nav>
+  <div class="header__logo">
+    <a href="/" aria-label="Home">
+      <img src="/assets/logo.png"></img>
+    </a>
+  </div>
+
+  <ul>
+    
+      <li>
+        <a href="/about.html">About me</a>
+      </li>  
+    
+      <li>
+        <a href="/posts/">Blog Posts</a>
+      </li>  
+    
+  </ul>
+</nav>
+
+
+    
+  <main><p>For the first time in a good while, I feel like I've found an ergonomic color scheme suitable for my programming and daily-use needs. I've chosen to use the Gruvbox-Dark color scheme across my entire environment to help save my eyes from strain and maybe even my sanity, as the theme just feels so cozy and warm, but I digress.</p>
+<p>For this post, I plan to outline what customizations I have done to create my preferred Linux computing environment for other people who may want to try, as well as for myself, as I'm quite forgetful.</p>
+<h2>1. The Distribution</h2>
+<p>As a baseline for the system, I do prefer Arch as my core system. Although I'm also really lazy, so I prefer to use Endeavour OS, as the team has done a great job of providing the Arch experience while also removing quite a few headaches from the install process. This config should still work under vanilla Arch in case you still wanted to go that route.</p>
+<p>I install Endeavour OS with the following preferences:</p>
+<ul>
+<li>i3 window manager</li>
+<li>Printing support</li>
+<li>Bash</li>
+<li>LTS Linux kernel</li>
+</ul>
+<h2>2. The Dotfiles Repository</h2>
+<p>I have published my continually-changing dotfiles <a href="https://github.com/mexiquin/dotfiles">on my GitHub</a>.</p>
+<p>The repo is designed to be used alongside GNU Stow, which will handle simlinking the configuration files to the appropriate locations within the home folder.</p>
+<p>To get started, clone the repository with the following command:</p>
+<pre><code class="language-bash">git clone https://github.com/mexiquin/dotfiles ~/.dotfiles --recurse-submodules
+</code></pre>
+<p>This will put the repo right where it needs to go. To use Stow to create the symlinks, <code>cd</code> into the <code>.dotfiles</code> directory you just created, then execute</p>
+<pre><code class="language-bash">stow .
+</code></pre>
+<p><em>It's possible that you will get an error the first time this is run.</em> This is because Stow doesn't want to overwrite files that already exist. For this to work, you have to delete the files that are in the way, they will be listed by Stow when the error is thrown. You can either back-up your original files first, or just delete them. Don't delete them unless you are absolutely sure you want to do this.</p>
+<h2>3. Other Configurations</h2>
+<p>After the dotfiles are where they need to be, there are just some other simple changes that need to be done before the configuration is complete.</p>
+</main>
+
+    <div class="footer__container">
+  <p>This is placeholder footer content</p>
+</div>
+
+  </body>
+</html>
+

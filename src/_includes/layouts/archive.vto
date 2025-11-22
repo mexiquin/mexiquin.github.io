@@ -1,0 +1,11 @@
+{{ layout "components/base/base-layout.vto" }}
+  <main>
+    {{ for item of collection }}
+      <div class="archive__card">
+        <a href="{{ item.url }}">
+          <h2 class="archive__card-title">{{ item.data.title }}</h2>
+        </a>
+      </div>
+    {{ /for }}
+  </main>
+{{ /layout }}
