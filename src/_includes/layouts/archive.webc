@@ -1,8 +1,9 @@
 <page-base>
   <main>
+    <h2 class="archive__heading" @html="title"></h2>
     <div webc:for="item of collection" webc:if="!item.data.draft" class="archive__card">
       <a :href="item.url">
-        <h2 class="archive__card-title" @html="item.data.title"></h2>
+        <h3 class="archive__card-title" @html="item.data.title"></h3>
       </a>
     </div>
   </main>

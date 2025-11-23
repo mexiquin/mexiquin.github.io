@@ -1,3 +1,6 @@
 <page-base>
-  <main @raw="content"></main>
+  <main>
+    <h2 class="single__heading" @html="title"></h2>
+    <template webc:nokeep @raw="content"></template>
+  </main>
 </page-base>
