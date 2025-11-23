@@ -1,4 +1,4 @@
 export default {
-  layout: "layouts/single.vto"
+  layout: "layouts/single.webc"
 };
 

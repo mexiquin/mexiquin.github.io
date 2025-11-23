@@ -1,6 +1,7 @@
 ---
 title: Blog Posts
-tags: navigation
+eleventyNavigation:
+  key: Blog
 layout: layouts/archive
 pagination:
   data: collections.posts

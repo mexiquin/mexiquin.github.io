@@ -1,0 +1,38 @@
+<nav class="header__nav">
+  <div class="header__logo-container">
+    <a href="/" aria-label="Home">
+      <img class="header__logo-img" src="/assets/logo.png"></img>
+    </a>
+  </div>
+
+  <div class="header__link-list" 
+    @html="eleventyNavigationToHtml(eleventyNavigation($data.collections.all))"></div>
+</nav>
+
+<style webc:scoped>
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    background-color: gray;
+  }
+
+  .header__logo-img {
+   max-width: 55px;
+   height: auto;
+   display: block;
+  }
+
+  .header__link-list ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 2rem;
+  }
+
+  .header__link-list ul > li {
+    padding: .5rem;
+  }
+</style>

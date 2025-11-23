@@ -1,7 +1,8 @@
 ---
 title: About me
 permalink: about.html
-tags: navigation
+eleventyNavigation:
+  key: About
 layout: layouts/single
 ---
 
