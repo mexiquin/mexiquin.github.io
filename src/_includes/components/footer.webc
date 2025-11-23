@@ -1,3 +1,13 @@
 <div class="footer__container">
-  <p>This is placeholder footer content</p>
+  <p class="footer_copyright" @html="`&copy; ${new Date().getFullYear()} Quinton Jasper`"></p>
 </div>
+
+<style webc:scoped>
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: gray;
+  }
+</style>
