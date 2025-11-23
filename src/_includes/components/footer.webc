@@ -1,5 +1,5 @@
 <div class="footer__container">
-  <p class="footer_copyright" @html="`&copy; ${new Date().getFullYear()} Quinton Jasper`"></p>
+  <p class="footer_copyright" @html="`&copy; 2022-${new Date().getFullYear()} Quinton Jasper`"></p>
 </div>
 
 <style webc:scoped>
