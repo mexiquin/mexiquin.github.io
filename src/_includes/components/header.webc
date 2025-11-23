@@ -14,11 +14,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     background-color: gray;
+    padding: 1rem;
   }
 
   .header__logo-img {
-   max-width: 50px;
+   max-width: 60px;
    height: auto;
    display: block;
   }
@@ -28,7 +30,6 @@
     flex-direction: row;
     list-style-type: none;
     padding: 0;
-    margin-left: 2rem;
   }
 
   .header__link-list ul > li {
