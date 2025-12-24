@@ -12,7 +12,8 @@
     "build": "npx @11ty/eleventy",
     "dev": "npx @11ty/eleventy --serve",
     "build:clean": "rm -rf _site .cache && npx @11ty/eleventy",
-    "dev:clean": "rm -rf _site .cache && npx @11ty/eleventy --serve"
+    "dev:clean": "rm -rf _site .cache && npx @11ty/eleventy --serve",
+    "new": "nvim $(npm prefix)/post_template.md -c ':cd src/posts/'"
   },
   "repository": {
     "type": "git",
