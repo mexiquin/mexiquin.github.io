@@ -1,9 +1,10 @@
 ---
 title: About me
 permalink: about.html
-eleventyNavigation:
-  key: About
 layout: layouts/single
+
+tags:
+  - navigation
 ---
 
 I'm just a programmer that does little neat things :)

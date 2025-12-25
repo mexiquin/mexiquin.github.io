@@ -1,0 +1,14 @@
+{{ layout "site-core/page-base.vto" }}
+<main>
+  <h2 class="archive__heading">{{ title }}</h2>
+  {{ for item of collectionToList }}
+    {{ if !item.data.draft }}
+    <div class="archive__card">
+      <a href="{{ item.url }}">
+        <h3 class="archive__card-title">{{ item.data.title }}</h3>
+      </a>
+    </div>
+    {{ /if }}
+  {{ /for }}
+</main>
+{{ /layout }}

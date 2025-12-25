@@ -1,0 +1,14 @@
+<nav class="header__nav">
+  <div class="header__logo-container">
+    <a href="/" aria-label="Home">
+      <img class="header__logo-img" src="/assets/logo.png"></img>
+    </a>
+  </div>
+
+  <div class="header__link-list">
+    {{ for collection of collections.navigation }}
+      <a href={{ collection.page.url }}>{{ collection.data.title }}</a>
+    {{ /for }}
+  </div>
+</nav>
+

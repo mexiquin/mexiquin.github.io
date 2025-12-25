@@ -1,10 +1,11 @@
 ---
 title: Blog Posts
-eleventyNavigation:
-  key: Blog
 layout: layouts/archive
 pagination:
   data: collections.posts
   size: 10
-  alias: collection
+  alias: collectionToList
+
+tags:
+  - navigation
 ---

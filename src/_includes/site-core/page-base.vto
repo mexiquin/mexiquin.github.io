@@ -8,8 +8,8 @@
     <style @raw="getBundle('css')" webc:keep></style>
   </head>
   <body>
-    <header></header>
-    <slot></slot>
-    <footer></footer>
+    {{ include "site-core/header.vto" }}
+    {{ content }} 
+    {{ include "site-core/footer.vto" }}
   </body>
 </html>

@@ -1,23 +1,18 @@
-import pluginWebc from "@11ty/eleventy-plugin-webc";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import { VentoPlugin } from 'eleventy-plugin-vento';
 
 export default function(eleventyConfig) {
-
-  // enable webc
-  eleventyConfig.addPlugin(pluginWebc, {
-		// Glob to find no-import global components
-		// (The default changed from `false` in Eleventy WebC v0.7.0)
-		components: "src/_includes/components/**/*.webc",
-
-		// Adds an Eleventy WebC transform to process all HTML output
-		useTransform: false,
-
-		// Additional global data used in the Eleventy WebC transform
-		transformData: {},
-
-		// Options passed to @11ty/eleventy-plugin-bundle
-		bundlePluginOptions: {},
-	});
+  
+  // enable vento
+  eleventyConfig.addPlugin(VentoPlugin, {
+    plugins: [],
+    shortcodes: true,
+    pairedShortcodes: true,
+    filters: true,
+    ventoOptions: {
+      includes: "src/_includes" 
+    }
+  });
 
   // enable eleventy navigation
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -34,8 +29,8 @@ export default function(eleventyConfig) {
   });
 
   return {
-    markdownTemplateEngine: "webc",
-		dataTemplateEngine: 'webc',
-		htmlTemplateEngine: 'webc'
+    markdownTemplateEngine: 'vto',
+		dataTemplateEngine: 'vto',
+		htmlTemplateEngine: 'vto'
   };
 };
