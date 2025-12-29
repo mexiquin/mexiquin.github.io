@@ -1,8 +1,14 @@
 {{ layout "site-core/page-base.vto" }}
-<main>
-  <h2 class="single__heading">{{ title }}</h2>
-  {{ content }}
+<main class="">
 
-  <a href="..">Back to all posts</a>
+  {{ include "components/page-title.vto" { title: title } }}
+  {{ include "components/back-button.vto" { prevPageName: "posts listing" } }}
+
+  <div id="post_content" class="my-5">
+    {{ content }}
+  </div>
+
+  {{ include "components/back-button.vto" { prevPageName: "posts listing" } }}
+
 </main>
 {{ /layout }}

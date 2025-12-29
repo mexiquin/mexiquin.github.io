@@ -8,9 +8,11 @@
     <title>{{ title }}</title>
     
   </head>
-  <body>
+  <body class="flex flex-row m-10 bg-[url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F242893.jpg&f=1&nofb=1&ipt=7e17b768bdf916f2ff00822c8d77aa2e5011169e01fe18be2efb6ad7267cff96)]">
     {{ include "site-core/header.vto" }}
-    {{ content }} 
+    <section class="bg-white p-3 w-full">
+      {{ content }} 
+    </section>
     {{ include "site-core/footer.vto" }}
   </body>
 </html>

@@ -1,6 +1,6 @@
 {{ layout "site-core/page-base.vto" }}
 <main>
-  <h2 class="single__heading">{{ title }}</h2>
+  {{ include "components/page-title.vto" { title: title } }}
   {{ content }}
 </main>
 {{ /layout }}
