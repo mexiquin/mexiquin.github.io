@@ -1,5 +1,4 @@
 # Specify filepatterns you want git to ignore.
-/public 
+/_site
 */.DS_Store
-/resources
 /node_modules
