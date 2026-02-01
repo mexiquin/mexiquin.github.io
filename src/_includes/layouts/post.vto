@@ -3,12 +3,11 @@
 
   {{ include "components/page-title.vto" { title: title } }}
   {{ include "components/back-button.vto" { prevPageName: "posts listing" } }}
+  <br>
 
   <div id="post_content">
     {{ content }}
   </div>
-
-  {{ include "components/back-button.vto" { prevPageName: "posts listing" } }}
 
 </main>
 {{ /layout }}

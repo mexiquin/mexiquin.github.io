@@ -8,8 +8,7 @@
   </ul>
   <ul>
     {{ for collection of collections.navigation }}
-      <li><a href={{ collection.page.url }}>{{ collection.data.title }}</a></li>
+    <li><a class="contrast" href={{ collection.page.url }}>{{ collection.data.title }}</a></li>
     {{ /for }}
   </ul>
 </nav>
-
