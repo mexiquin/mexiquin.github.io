@@ -4,4 +4,6 @@ permalink: /
 layout: layouts/single
 ---
 
-Wow! This is the home page!
+I'm Quinton Jasper, just a software developer plunking along at life.
+
+Not really a graphic designer, but I try :) 

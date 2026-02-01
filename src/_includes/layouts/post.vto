@@ -1,10 +1,10 @@
 {{ layout "site-core/page-base.vto" }}
-<main class="">
+<main>
 
   {{ include "components/page-title.vto" { title: title } }}
   {{ include "components/back-button.vto" { prevPageName: "posts listing" } }}
 
-  <div id="post_content" class="my-5">
+  <div id="post_content">
     {{ content }}
   </div>
 

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/pico.min.css">
     <link rel="stylesheet" href="/styles/index.css">
     <title>{{ title }}</title>
     
   </head>
-  <body class="flex flex-row m-10 bg-[url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F242893.jpg&f=1&nofb=1&ipt=7e17b768bdf916f2ff00822c8d77aa2e5011169e01fe18be2efb6ad7267cff96)]">
+  <body class="container">
     {{ include "site-core/header.vto" }}
-    <section class="bg-white p-3 w-full">
+    <section>
       {{ content }} 
     </section>
     {{ include "site-core/footer.vto" }}

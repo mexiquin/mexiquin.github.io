@@ -1,14 +1,15 @@
-<nav class="flex flex-col p-5 bg-black min-w-max items-center">
-  <div class="header__logo max-w-17">
-    <a href="/" aria-label="Home">
-      <img class="header__logo-img" src="/assets/logo.png"></img>
-    </a>
-  </div>
-
-  <div class="flex flex-col gap-2 mt-2 text-white">
+<nav>
+  <ul>
+    <li>
+      <a href="/" aria-label="Home">
+        <img src="/assets/logo.png" style="height: 64px; width: auto;">
+      </a>
+    </li>
+  </ul>
+  <ul>
     {{ for collection of collections.navigation }}
-      <a href={{ collection.page.url }}>{{ collection.data.title }}</a>
+      <li><a href={{ collection.page.url }}>{{ collection.data.title }}</a></li>
     {{ /for }}
-  </div>
+  </ul>
 </nav>
 

@@ -7,4 +7,6 @@ tags:
   - navigation
 ---
 
-I'm just a programmer that does little neat things :)
+I'm Quinton Jasper, just a software developer plunking along at life.
+
+Not really a graphic designer, but I try :) 

@@ -1,12 +1,8 @@
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import { VentoPlugin } from 'eleventy-plugin-vento';
-import fs from 'fs';
-import path from 'path';
-import postcss from 'postcss';
-import tailwindcss from '@tailwindcss/postcss';
 
-export default function(eleventyConfig) {
-  
+export default function (eleventyConfig) {
+
   // enable vento
   eleventyConfig.addPlugin(VentoPlugin, {
     plugins: [],
@@ -14,47 +10,32 @@ export default function(eleventyConfig) {
     pairedShortcodes: true,
     filters: true,
     ventoOptions: {
-      includes: "src/_includes" 
+      includes: "src/_includes"
     }
   });
 
   // enable eleventy navigation
-	eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // eleventy folder config
   eleventyConfig.setInputDirectory("src");
 
   // passthrough files
   eleventyConfig.addPassthroughCopy("src/assets/");
+  // copy pico css
+  eleventyConfig.addPassthroughCopy({ "node_modules/@picocss/pico/css/pico.min.css": "css/pico.min.css" });
+  // copy custom css
+  eleventyConfig.addPassthroughCopy("src/styles/index.css");
 
   // Collections
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/posts/**/*.md");
   });
 
-
-  eleventyConfig.on('eleventy.before', async () => {
-    const tailwindInputPath = path.resolve('./src/styles/index.css');
-    const tailwindOutputPath = './_site/styles/index.css';
-    const cssContent = fs.readFileSync(tailwindInputPath, 'utf8');
-    const outputDir = path.dirname(tailwindOutputPath);
-
-    if (!fs.existsSync(outputDir)) {
-      fs.mkdirSync(outputDir, { recursive: true });
-    }
-
-    const result = await postcss([tailwindcss()]).process(cssContent, {
-      from: tailwindInputPath,
-      to: tailwindOutputPath,
-    });
-
-    fs.writeFileSync(tailwindOutputPath, result.css);
-
-    return {
-      dir: { input: 'src', output: '_site' },
-      markdownTemplateEngine: 'vto',
-      dataTemplateEngine: 'vto',
-      htmlTemplateEngine: 'vto'
-    };
-  });
+  return {
+    dir: { input: 'src', output: '_site' },
+    markdownTemplateEngine: 'vto',
+    dataTemplateEngine: 'vto',
+    htmlTemplateEngine: 'vto'
+  };
 };
