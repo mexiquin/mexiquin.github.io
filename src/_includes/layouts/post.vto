@@ -1,9 +1,9 @@
 {{ layout "site-core/page-base.vto" }}
 <main>
 
-  {{ include "components/page-title.vto" { title: title } }}
-  {{ include "components/back-button.vto" { prevPageName: "posts listing" } }}
+  {{ include "components/back-button.vto" { prevPageName: "Blog Posts" } }}
   <br>
+  {{ include "components/page-title.vto" { title: title } }}
 
   <div id="post_content">
     {{ content }}
