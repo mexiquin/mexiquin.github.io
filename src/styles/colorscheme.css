@@ -1,0 +1,16 @@
+:root {
+  /* Light Mode (Default) */
+  --background-color: #687a7d;
+  --secondary-background-color: #546A76;
+  --text-color: #FFE1A8;
+  --primary-color: #546A76;
+  --secondary-color: #E26D5C;
+  --accent-color: #C9CBA3;
+}
+
+.dark {
+  /* Dark Mode Overrides */
+  --background-color: #3A4547;
+  --secondary-background-color: #4A5759;
+  --primary-color: #2E3A3C;
+}

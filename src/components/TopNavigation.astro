@@ -1,0 +1,90 @@
+---
+import type { AstroInstance } from "astro";
+import "../styles/colorscheme.css";
+
+interface Page extends AstroInstance {
+    title?: string;
+}
+
+const topLevelPages: Page[] = Object.values(
+    import.meta.glob("../pages/*.astro", { eager: true })
+);
+
+// Filter out the home page (we'll handle that separately)
+const filteredPages = topLevelPages.filter((page: Page) => {
+    return typeof page.url === "string" && page.url.length > 0;
+});
+---
+
+<nav class="top-navigation">
+    <ul class="top-navigation__list">
+        <li class="top-navigation__list-item top-navigation__list-item--home">
+            <a href="/">
+                <svg
+                    width="85.505417mm"
+                    height="85.505417mm"
+                    viewBox="0 0 85.505417 85.505417"
+                    version="1.1"
+                    id="svg1"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <defs id="defs1"></defs>
+                    <g id="layer1" transform="translate(-36.988956,-46.771579)">
+                        <path
+                            fill="currentColor"
+                            d="m 293.01678,329.9904 h -153.216 v -153.216 h 153.216 z m -4.608,-4.608 v -144 h -144 v 144 z m -5.184,-45.504 -20.544,28.032 -19.008,-13.44 q -18.816,16.896 -43.776,20.928 -6.72,1.152 -13.44,1.152 -22.464,0 -42.048,-11.328 v -69.312 q 1.728,16.32 13.824,27.264 12.096,10.752 28.224,10.752 11.328,0 21.12,-5.568 l -12.864,-9.024 21.12,-28.416 12.288,9.024 q 1.536,-7.68 0.384,-15.168 -2.496,-15.552 -14.4,-25.536 -11.904,-10.176 -27.456,-10.176 -16.32,0 -28.416,10.944 -12.096,10.752 -13.824,26.88 v -45.888 h 110.592 q 16.512,22.464 16.512,50.496 0,18.048 -7.296,34.56 z"
+                            id="logo"
+                            transform="matrix(0.55807105,0,0,0.55807105,-41.029812,-51.881095)"
+                        ></path>
+                    </g>
+                </svg>
+            </a>
+        </li>
+
+        {
+            filteredPages.map((page: Page) => (
+                <li class="top-navigation__list-item">
+                    <a href={page.url}>{page.title}</a>
+                </li>
+            ))
+        }
+    </ul>
+</nav>
+
+<style>
+    .top-navigation {
+        font-family: sans-serif;
+    }
+
+    .top-navigation__list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+        background-color: var(--secondary-background-color);
+    }
+
+    .top-navigation__list-item--home {
+        margin-right: auto;
+    }
+
+    .top-navigation__list-item a {
+        color: var(--text-color);
+    }
+
+    .top-navigation__list-item--home a {
+        color: var(--accent-color);
+    }
+
+    .top-navigation__list-item a:hover {
+        color: var(--secondary-color);
+    }
+
+    .top-navigation__list-item--home svg {
+        width: 3rem;
+        height: 3rem;
+    }
+</style>

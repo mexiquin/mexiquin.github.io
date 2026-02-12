@@ -1,9 +1,1 @@
-# Specify filepatterns you want git to ignore.
-/_site
-*/.DS_Store
-/node_modules
-
-# Nix
-result
-result-*
-.direnv/
+node_modules/

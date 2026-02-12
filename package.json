@@ -1,27 +1,14 @@
 {
-  "name": "quintons-blog",
-  "version": "1.0.0",
-  "description": "the _qjasper_ domain will be changed to the original _mexiquin.github.io_ domain once the subscription expires. Just a note for the future.",
-  "main": "index.js",
-  "dependencies": {
-    "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-navigation": "^1.0.4",
-    "@picocss/pico": "^2.1.1",
-    "eleventy-plugin-vento": "^5.2.1"
-  },
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "dev": "npx @11ty/eleventy --serve",
-    "build:clean": "rm -rf _site .cache && npx @11ty/eleventy",
-    "dev:clean": "rm -rf _site .cache && npx @11ty/eleventy --serve",
-    "new": "nvim $(npm prefix)/post_template.md -c ':cd src/posts/'"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@codeberg.org/mexiquin/quintons-blog.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module"
+  "dependencies": {
+    "astro": "^5.17.1"
+  }
 }

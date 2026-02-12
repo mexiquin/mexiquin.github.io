@@ -1,0 +1,14 @@
+---
+import Base from "./Base.astro";
+
+interface Props {
+    title: string;
+}
+
+const {frontmatter} = Astro.props; // Just in case this is a markdown file
+const { title } = Astro.props;
+---
+
+<Base title={ frontmatter?.title || title }>
+    <slot />
+</Base>
