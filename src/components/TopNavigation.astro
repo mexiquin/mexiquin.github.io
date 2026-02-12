@@ -7,7 +7,7 @@ interface Page extends AstroInstance {
 }
 
 const topLevelPages: Page[] = Object.values(
-    import.meta.glob("../pages/*.astro", { eager: true })
+    import.meta.glob(["../pages/*.astro", "../pages/**/index.astro"], { eager: true })
 );
 
 // Filter out the home page (we'll handle that separately)
@@ -44,12 +44,32 @@ const filteredPages = topLevelPages.filter((page: Page) => {
         {
             filteredPages.map((page: Page) => (
                 <li class="top-navigation__list-item">
-                    <a href={page.url}>{page.title}</a>
+                    <a href={page.url}>
+                        {page.title}
+                    </a>
                 </li>
             ))
         }
+
+        <li class="top-navigation__list-item">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <span class="sun">🌞</span>
+                <span class="moon">🌙</span>
+            </button>
+        </li>
     </ul>
 </nav>
+
+<script is:inline>
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle?.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.contains('dark');
+        const newTheme = isDark ? 'light' : 'dark';
+        document.documentElement.classList.remove('light', 'dark');
+        document.documentElement.classList.add(newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+</script>
 
 <style>
     .top-navigation {
@@ -87,4 +107,28 @@ const filteredPages = topLevelPages.filter((page: Page) => {
         width: 3rem;
         height: 3rem;
     }
+
+    .theme-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s ease;
+    }
+
+    .theme-toggle:hover {
+        transform: scale(1.1);
+    }
+
+    :global(.dark) .sun { display: block; }
+    :global(.dark) .moon { display: none; }
+    :global(.light) .sun { display: none; }
+    :global(.light) .moon { display: block; }
+
+    /* Default (no class yet) */
+    .sun { display: none; }
+    .moon { display: block; }
 </style>

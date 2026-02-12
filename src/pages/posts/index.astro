@@ -24,6 +24,8 @@ const sortedPosts: MarkdownInstance<Frontmatter>[] = posts
             new Date(b.frontmatter.date).valueOf() -
             new Date(a.frontmatter.date).valueOf()
     );
+
+export const title = "Blog";
 ---
 
 <Base title="Blog Posts">
