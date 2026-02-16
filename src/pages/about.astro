@@ -1,8 +1,10 @@
 ---
 import Single from "../layouts/Single.astro";
+import * as about from "../../data/pages/about.md";
 
-export const title = "About";
+export const title = about.frontmatter.title;
 ---
 
-<Single title={title}>
+<Single title={about.frontmatter.title}>
+    <about.Content />
 </Single>

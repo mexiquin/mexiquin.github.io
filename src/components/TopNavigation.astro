@@ -7,7 +7,7 @@ interface Page extends AstroInstance {
 }
 
 const topLevelPages: Page[] = Object.values(
-    import.meta.glob(["../pages/*.astro", "../pages/**/index.astro"], {
+    import.meta.glob("../pages/*.astro", {
         eager: true,
     }),
 );

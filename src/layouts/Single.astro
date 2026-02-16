@@ -5,11 +5,10 @@ interface Props {
     title: string;
 }
 
-const { frontmatter } = Astro.props; // Just in case this is a markdown file
 const { title } = Astro.props;
 ---
 
-<Base title={ frontmatter?.title || title }>
+<Base title={ title }>
     <article class="single-article">
         <slot />
     </article>
