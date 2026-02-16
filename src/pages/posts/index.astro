@@ -38,7 +38,7 @@ export const title = "Blog";
                         <time datetime={post.frontmatter.date}>
                             {new Date(post.frontmatter.date).toLocaleDateString(
                                 "en-US",
-                                {
+                               {
                                     year: "numeric",
                                     month: "long",
                                     day: "numeric",
@@ -63,3 +63,13 @@ export const title = "Blog";
         </ul>
     </div>
 </Base>
+
+<style>
+  a {
+    color: var(--text-color);
+  }
+
+  a:hover {
+    color: var(--secondary-color);
+  }
+</style>

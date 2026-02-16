@@ -1,5 +1,6 @@
 ---
 title: "Reinstalling Nix in VanillaOS"
+layout: "../../layouts/Single.astro"
 date: 2023-06-05T22:44:43-07:00
 author: Quinton Jasper
 draft: false
