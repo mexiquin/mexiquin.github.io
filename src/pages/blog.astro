@@ -1,0 +1,56 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+export const title = "Blog";
+
+const posts = await getCollection("blog");
+---
+
+<Base title={title}>
+    <div class="posts-container">
+        <ul class="post-list">
+            {
+                posts.map((post) => (
+                    <li>
+                        <div class="posts-card">
+                            <a href={`/blog/${post.id}`}>
+                                <h2>{post.data.title}</h2>
+                            </a>
+                        </div>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</Base>
+
+<style>
+    .post-container {
+
+}
+
+    .post-list {
+        list-style: none; /* Remove bullet points */
+        padding-left: 0; /* Remove default padding */
+    }
+    .posts-card {
+        display:flex; 
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-top: 0.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0.5rem;
+        background-color: var(--secondary-background-color);
+    }
+
+    a {
+        color: var(--text-color);
+    }
+
+    a:hover {
+        color: var(--secondary-color);
+    }
+</style>
