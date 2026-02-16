@@ -1,5 +1,6 @@
 ---
 title: "New Job"
+layout: "../../layouts/Single.astro"
 date: 2022-04-23T10:21:16-07:00
 author: Quinton Jasper
 draft: false

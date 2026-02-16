@@ -1,5 +1,6 @@
 ---
 title: "The Case of the Outdated iMac"
+layout: "../../layouts/Single.astro"
 date: 2021-01-23T01:35:15-07:00
 author: Quinton Jasper
 draft: false
