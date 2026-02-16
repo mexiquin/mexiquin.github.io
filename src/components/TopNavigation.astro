@@ -118,6 +118,14 @@ const filteredPages = topLevelPages.filter((page: Page) => {
         color: var(--text-color);
     }
 
+    .top-navigation__list-item--home {
+        transition: transform 0.2s ease;
+    }
+
+    .top-navigation__list-item--home:hover {
+        transform: scale(1.1);
+    }
+
     .top-navigation__list-item--home a {
         color: var(--accent-color);
     }
