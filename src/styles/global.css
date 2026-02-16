@@ -1,0 +1,10 @@
+* {
+    font-family: sans-serif;
+}
+a {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
