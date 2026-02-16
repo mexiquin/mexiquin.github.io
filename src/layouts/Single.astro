@@ -10,5 +10,15 @@ const { title } = Astro.props;
 ---
 
 <Base title={ frontmatter?.title || title }>
-    <slot />
+    <article class="single-article">
+        <slot />
+    </article>
 </Base>
+
+<style>
+    .single-article {
+        background-color: var(--secondary-background-color);
+        padding: 0.25rem 1rem;
+        border-radius: 5px;
+    }
+</style>
